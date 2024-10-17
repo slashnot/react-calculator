@@ -1,0 +1,51 @@
+.Keypad {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 100%;
+
+    .mainKeys {
+        flex: 3;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(5, 1fr);
+
+        user-select: none;
+        cursor: pointer;
+    }
+
+    .operators {
+        flex: 1;
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(5, 1fr);
+
+        user-select: none;
+        cursor: pointer;
+    }
+
+    .zero {
+        grid-column: span 2;
+    }
+
+
+    .operation {
+        background: #4c667a;
+        justify-content: center;
+        align-items: center;
+
+        font-family: 'Roboto';
+        font-weight: 400;
+        font-size: 1.5rem;
+
+        &.equals {
+            background: #fd891c;
+        }
+    }
+
+    .actions {
+        font-family: 'Roboto';
+        font-weight: 400;
+        font-size: 1.5rem;
+    }
+}

@@ -1,6 +1,5 @@
 import classes from "./Display.module.scss"
 
-console.log(classes)
 const Display = ({ operation, result }) => {
     return (
         <div className={classes.display}>
